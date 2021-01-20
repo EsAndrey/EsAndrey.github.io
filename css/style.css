@@ -24,16 +24,13 @@
     font-weight: Bold; 
     }
 
-body {
-    background-color: #fbfbfc;
-}
-
 .header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
+    background-color: #fbfbfc;
 }
 
 .nav-container {
@@ -94,7 +91,7 @@ body {
     font-family: 'Inter',Arial,sans-serif;
     line-height: 1.55;
     font-weight: 500;
-    color: #000000;
+    color: black;
     opacity: 0.9;
 }
 
@@ -106,12 +103,14 @@ body {
 
 .main {
     width: 100%;
-    height: 1000px;
+    height: 900px;
+    background-color: #fbfbfc;
 }
 
 .main-container {
-    padding-top: 300px;
+    padding-top: 250px;
     max-width: 1200px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -122,15 +121,12 @@ body {
     font-family: 'Inter',Arial,sans-serif;
     line-height: 1.2;
     font-weight: 700;
+    margin-top: 45px;
 }
 
 .main-left {
     width: 50%;
-    height: 500px;
-}
-.main-right {
-    width: 50%;
-    height: 500px;
+    height: 490px;
 }
 
 .main-subtext {
@@ -140,7 +136,7 @@ body {
     font-family: 'Inter',Arial,sans-serif;
     line-height: 1.55;
     font-weight: 400;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .main-requests {
@@ -177,6 +173,133 @@ body {
 .cost-link:hover {
     background-color: #ff4759;
     text-decoration: none;
-    color: white;
+    color: #fbfbfc;
     border: 1px solid #ff4759;
+}
+
+.main-right {
+    background-image: url(/img/super.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 490px;
+}
+
+.main-advatages {
+    margin-top: 40px;
+    display: flex;
+}
+
+.advatages-one {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.advatages-two {
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.advatages-three {
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.advatages-one span, .advatages-two span, .advatages-three span {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Inter',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-left: 10px;
+    display: block;
+    height: 100%;
+}
+
+.advatages-one img, .advatages-two img, .advatages-three img {
+    height: 34px;
+}
+
+.company {
+    width: 100%;
+    height: 640px;
+    background-color: #fbfbfc;
+}
+
+.company-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.company-left {
+    width: 50%;
+}
+
+.company-left h3 {
+    margin-top: 110px;
+    font-family: 'Inter',Arial,sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.company-right {
+    width: 50%;
+    background-image: url(/img/about.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.company-left p {
+    margin-top: 40px;
+    font-family: 'Inter',Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.company-left p ~ p {
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.submit-application {
+    margin-top: 40px;
+    width: 200px;
+    height: 45px;
+}
+
+.submit-link {
+    text-align: center;
+    display: block;
+    color: #fbfbfc;
+    font-size: 16px;
+    font-family: 'Inter',Arial,sans-serif;
+    line-height: 45px;
+    font-weight: 400;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #e64456;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.submit-link:hover {
+    text-decoration: none;
+    color: #fbfbfc;
+    background-color: #ff4759;
 }
