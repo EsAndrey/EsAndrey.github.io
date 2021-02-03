@@ -9,7 +9,9 @@
 <body>
     <header class="header">
         <nav class="nav-container">
-            <a class="navbar-brand" href="#">HR</a>
+            <a class="navbar-brand" href="#">
+                <div class="navbar-lebel">IN</div><span>персонал</span>
+            </a>
             <div class="navbar-broad">
               <ul class="navbar-list">
                 <li class="navbar-item">
@@ -37,7 +39,7 @@
     <section class="main">
         <div class="main-container">
             <div class="main-left">
-                <h1 class="main-text">Подбор<br> персонала в Москве<br>
+                <h1 class="main-text">Подбор персонала<br> в Москве
                     от 3-х дней
                 </h1>
                 <div class="main-subtext">Гарантия замены кандидата до 6 месяцев!</div>
@@ -64,7 +66,10 @@
                     </div>
                 </div>
             </div>
-            <div class="main-right">
+            <div class="main-right">  
+                <div class="main-right-text">3</div>
+                <img class="main-right-img" src="/img/1.png" alt="money"></img>
+                <img src="/img/2.png" alt="money-head" class="main-right-img-head">
             </div>
         </div>
     </section>
@@ -72,8 +77,9 @@
         <div class="company-container">
             <div class="company-left">
                 <h3>О компании</h3>
-                <p>Мы специализирующаяся на решениях в области управления<br> персоналом. Наши консультанты обладают отраслевой<br> и функциональной экспертизой в подборе<br> высококвалифицированных профессионалов и руководителей<br> среднего и высшего звена, а также специалистов<br> на стартовые позиции, как на постоянные,<br> так и на временные проекты.</p>
-                <p>Вы все еще не начали сотрудничать с нами?</p>
+                <p class="company-left-text">Мы специализирующаяся на решениях в области управления<br> персоналом. Наши консультанты обладают отраслевой и<br> функциональной экспертизой в подборе высококвалифицированных<br> профессионалов и руководителей среднего и высшего звена,<br> а также специалистов на стартовые позиции, как на постоянные,<br> так и на временные проекты.<br>
+                <p class="company-left-subtext"><span>Intouch personnel</span> предоставляет решения для бизнеса, которые позволяют комплексно подойти к анализу рынка, оценке и развитию персонала, управлению HR функциями, формировать проектные команды под потребности наших клиентов, а также выстраивать системы управления поставщиками и услугами.</p>
+                <p class="company-left-text-call">Вы всё ещё не начали сотрудничать с нами?</p>
                 <div class="submit-application">
                     <a class="submit-link" href="#">Сотрудничество</a>
                 </div>
@@ -85,10 +91,10 @@
     <section class="employee">
         <div class="employee-wrapper">
             <div class="employee-left">
-                <div class="employee-header">Найдем работу вашей <br> мечты за короткий срок!</div>
+                <h3 class="employee-header">Найдем работу вашей <br> мечты за короткий срок!</h3>
                 <div class="employee-subheader">
-                    XXX является признанным экспертом в области поиска и привлечения <br>персонала. 
-                    В зависимости от потребностей клиента мы готовы <br>предложить различные типы решений, которые отличаются уровнем<br> ответственности XXXа и методами управления.
+                    Intouch personnel является признанным экспертом в области поиска и привлечения персонала. 
+                    В зависимости от потребностей клиента мы готовы предложить различные типы решений, которые отличаются уровнем ответственности Intouch personnel и методами управления.
                 </div>
                 <div class="employee-apply">Отправьте нам ваше резюме</div>
             </div>
@@ -106,7 +112,7 @@
                     <div class="employee-form-block">
                         <input type="file" id="upload-file">
                         <label for="upload-file" class="upload-file-wrapper">
-                            <span class="upload-file-img"><img src="/img/cloud-upload.svg"></span>
+                            <span class="upload-file-img"><img src="/img/cloud-upload.svg" alt="upload"></span>
                             <span class="upload-file-text">Выберите файл</span>
                         </label>
                     </div>
@@ -163,8 +169,8 @@
                      и составляет 13% - 25% в зависимости от региона, области деятельности компании, сроков подбора персонала и сложности заказа.</p>
                 <p>Правила пользования калькулятором:</p>
                 <ul>
-                    <li>В калькуляторе приводится примерный расчет, окончательная стоимость услуги оговаривается с Вашим менеджером (постоянным Клиентам предусмотрены скидки).</li>
-                    <li>При участии в системе скидок, получении бонусов, в различных акциях стоимость рассчитывается в индивидуальном порядке.</li>
+                    <li>- В калькуляторе приводится примерный расчет, окончательная стоимость услуги оговаривается с Вашим менеджером (постоянным Клиентам предусмотрены скидки).</li>
+                    <li>- При участии в системе скидок, получении бонусов, в различных акциях стоимость рассчитывается в индивидуальном порядке.</li>
                 </ul>
             </div>
             <div class="calculate-right-down">
@@ -172,12 +178,12 @@
                     <div class="calculate-form-block">
                         <p class="calc-form-header"><label for="profession">Ваша отрасль</label></p>
                         <p class="calc-form-subheader"><select id="profession">
+                            <option value="2">Медицина. Фармацевтика.</option>
                             <option value="1">Финансовый сектор: Банковское дело.  Лизинг.</option>
                             <option value="2">Информационные технологии. Телекоммуникации.</option>
                             <option value="2">PR &amp; Marketing (ATL &amp; BTL).</option>
                             <option value="2">HR. Управление персоналом. Кадровые службы.</option>
                             <option value="2">Страховые компании. Недвижимость.</option>
-                            <option value="2">Медицина. Фармацевтика.</option>
                             <option value="2">Красота. Здоровье. Фитнес. SPA.</option>
                             <option value="2">Туристическая деятельность. Гостиничный бизнес.</option>
                             <option value="2">Секретариат и делопроизводство. Административный персонал.</option>
@@ -378,20 +384,20 @@
     </section>
     <section class="service">
         <div class="service-block-wrapper">
-            <div class="service-block-left">
+            <h3 class="service-block-left">
                 Услуги, оказываемые<br> нашей компанией:
-            </div>
+            </h3>
             <div class="service-block-right">
                 <ul>
-                    <li>Подбор руководителей высшего звена</li>
-                    <li>Подбор руководителей среднего звена</li>
-                    <li>Подбор специалистов и менеджеров</li>
-                    <li>Подбор административного персонала</li>
-                    <li>Подбор инженерно-технического персонала</li>
-                    <li>Подбор линейного персонала (на производство, склад и т.п.)</li>
-                    <li>Подбор временного персонала</li>
-                    <li>Региональный подбор персонала</li>
-                    <li>Массовый подбор персонала</li>
+                    <li>- Подбор руководителей высшего звена</li>
+                    <li>- Подбор руководителей среднего звена</li>
+                    <li>- Подбор специалистов и менеджеров</li>
+                    <li>- Подбор административного персонала</li>
+                    <li>- Подбор инженерно-технического персонала</li>
+                    <li>- Подбор линейного персонала (на производство, склад и т.п.)</li>
+                    <li>- Подбор временного персонала</li>
+                    <li>- Региональный подбор персонала</li>
+                    <li>- Массовый подбор персонала</li>
                 </ul>
             </div>
         </div>
@@ -399,7 +405,7 @@
     <section class="conditions">
         <div class="conditions-wrapper">
             <div class="conditions-left">
-                <div class="conditions-left-header">Условия сотрудничества</div>
+                <h3 class="conditions-left-header">Условия сотрудничества</h3>
                 <ul>
                     <li>- Мы работаем без предоплаты: оплата производится по факту выхода специалиста на работу.</li>
                     <li>- Точная стоимость определяется индивидуально после переговоров и зависит от уровня сложности вакансии, срочности, продолжительности гарантийного срока, а также эксклюзивности сотрудничества.</li>
@@ -414,8 +420,8 @@
     <section class="step">
         <div class="step-wrapper">
             <div class="step-left">
-                <div class="step-header">5 простых шагов
-                    для <br> начала сотрудничества</div>
+                <h3 class="step-header">5 простых шагов
+                    для <br> начала сотрудничества</h3>
             </div>
             <div class="step-right">
                 <div class="step-right-item">
@@ -443,11 +449,11 @@
     </section>
     <section class="contacts">
         <div class="contacts-wrapper">
-            <div class="contacts-header">Давайте начнём<br> работать!</div>
+            <h2 class="contacts-header">Давайте начнём<br> работать!</h2>
             <div class="contacts-tel">+7 495 201-40-27</div>
-            <div class="contacts-email">hr@headhunter.com</div>
+            <div class="contacts-email">info@inpersonnel.ru</div>
             <div class="conatacts-text">Оставьте контактные данные, мы позвоним <br>вам и ответим на все вопросы</div>
-            <img src="\img/contacts.webp" alt="contacts" class="contacts-img">
+            <img src="/img/contacts.webp" alt="contacts" class="contacts-img">
             <div class="contacts-data">
                 <input type="text" id="contacts-data-name" value="Ваше имя">
                 <input type="tel" id="contacts-data-tel" value="8 926 168 35 35">
