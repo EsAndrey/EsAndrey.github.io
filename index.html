@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>HR</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Intouch Personnel</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -31,8 +50,49 @@
                 </li>
               </ul>
             </div>
-            <div class="send-request">
-                <a class="request-link" href="#">Подать заявку</a>
+            <div class="send-request-header">
+                <a class="request-link-header" href="#">Подать заявку</a>
+            </div>
+            <div class="navbar-burger-menu">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-burger-menu-block">
+                <div class="burger-cross">
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="navbar-brand-white" href="#">
+                    <div class="navbar-lebel-white">IN</div><span>персонал</span>
+                </a>
+                <ul class="navbar-list-burger">
+                    <li class="navbar-item-burger">
+                      <a class="navbarlink-burger" href="#">О компании</a>
+                    </li>
+                    <li class="navbar-item-burger">
+                        <a class="navbarlink-burger" href="#">Соискателю</a>
+                    </li>
+                    <li class="navbar-item-burger">
+                        <a class="navbarlink-burger" href="#">Расчитать стоимость</a>
+                    </li>
+                    <li class="navbar-item-burger">
+                        <a class="navbarlink-burger" href="#">Услуги</a>
+                    </li>
+                    <li class="navbar-item-burger">
+                        <a class="navbarlink-burger" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="navbar-contacts-burger">
+                    <div class="navbar-tel-burger"><a href="#">+7 495 201-40-27</a></div>
+                    <div class="navbar-email-burger">info@inpersonnel.ru</div>
+
+                    <div class="send-request-burger">
+                        <a class="request-link-burger" href="#">Подать заявку</a>
+                    </div>
+
+                    <div class="calculate-cost-burger">
+                        <a class="cost-link-burger" href="#">Расчитать стоимость</a>
+                    </div>
             </div>
         </nav>
     </header>
@@ -42,10 +102,15 @@
                 <h1 class="main-text">Подбор персонала<br> в Москве
                     от 3-х дней
                 </h1>
+                <div class="main-right-hidden">
+                    <div class="main-right-text-hidden animate__animated animate__zoomInUp">3</div>
+                    <img class="main-right-img-hidden" src="/img/1.png" alt="money">
+                    <img src="/img/2.png" alt="money-head" class="main-right-img-head-hidden">
+                </div>
                 <div class="main-subtext">Гарантия замены кандидата до 6 месяцев!</div>
                 <div class="main-requests">
-                    <div class="send-request">
-                        <a class="request-link" href="#">Подать заявку</a>
+                    <div class="send-request-main">
+                        <a class="request-link-main" href="#">Подать заявку</a>
                     </div>
                     <div class="calculate-cost">
                         <a class="cost-link" href="#">Расчитать стоимость</a>
@@ -67,8 +132,8 @@
                 </div>
             </div>
             <div class="main-right">  
-                <div class="main-right-text">3</div>
-                <img class="main-right-img" src="/img/1.png" alt="money"></img>
+                <div class="main-right-text animate__animated animate__zoomInUp">3</div>
+                <img class="main-right-img" src="/img/1.png" alt="money">
                 <img src="/img/2.png" alt="money-head" class="main-right-img-head">
             </div>
         </div>
@@ -77,26 +142,28 @@
         <div class="company-container">
             <div class="company-left">
                 <h3>О компании</h3>
-                <p class="company-left-text">Мы специализирующаяся на решениях в области управления<br> персоналом. Наши консультанты обладают отраслевой и<br> функциональной экспертизой в подборе высококвалифицированных<br> профессионалов и руководителей среднего и высшего звена,<br> а также специалистов на стартовые позиции, как на постоянные,<br> так и на временные проекты.<br>
+                <img src="/img/about.webp" alt="about company" class="company-left-img-hidden">
+                <p class="company-left-text">Мы специализирующаяся на решениях в области управления персоналом компания. Наши консультанты обладают отраслевой и функциональной экспертизой в подборе высококвалифицированных профессионалов и руководителей среднего и высшего звена, а также специалистов на стартовые позиции, как на постоянные, так и на временные проекты.
                 <p class="company-left-subtext"><span>Intouch personnel</span> предоставляет решения для бизнеса, которые позволяют комплексно подойти к анализу рынка, оценке и развитию персонала, управлению HR функциями, формировать проектные команды под потребности наших клиентов, а также выстраивать системы управления поставщиками и услугами.</p>
                 <p class="company-left-text-call">Вы всё ещё не начали сотрудничать с нами?</p>
                 <div class="submit-application">
                     <a class="submit-link" href="#">Сотрудничество</a>
                 </div>
             </div>
-            <div class="company-right">
+            <div class="company-right animate__animated animate__zoomInUp">
+                <img src="/img/about.webp" alt="about company" class="company-right-img">
             </div>
         </div>
     </section>
     <section class="employee">
         <div class="employee-wrapper">
             <div class="employee-left">
-                <h3 class="employee-header">Найдем работу вашей <br> мечты за короткий срок!</h3>
-                <div class="employee-subheader">
-                    Intouch personnel является признанным экспертом в области поиска и привлечения персонала. 
-                    В зависимости от потребностей клиента мы готовы предложить различные типы решений, которые отличаются уровнем ответственности Intouch personnel и методами управления.
-                </div>
-                <div class="employee-apply">Отправьте нам ваше резюме</div>
+                    <h3 class="employee-header">Найдем работу вашей <br> мечты за короткий срок!</h3>
+                    <div class="employee-subheader">
+                        <span>Intouch Personnel</span> является признанным экспертом в области поиска и привлечения персонала. 
+                        В зависимости от потребностей клиента мы готовы предложить различные типы решений, которые отличаются уровнем ответственности Intouch personnel и методами управления.
+                    </div>
+                    <div class="employee-apply">Отправьте нам ваше резюме</div>
             </div>
             <div class="employee-right">
                 <form>
@@ -127,12 +194,13 @@
         <div class="calculate-container">
             <div class="calculate-left">
                 <h3>Пример расчета стоимости<br> подбора персонала</h3>
-                <p>Мы специализирующаяся на решениях в области управления персоналом.<br> Наши консультанты обладают отраслевой и функциональной<br> экспертизой в подборе высококвалифицированных профессионалов и руководителей.</p>
+                <img src="/img/work.webp" alt="расчёт стоимости" class="calculate-right-img-hidden">
+                <p>Цена зависит от многих факторов, таких как привлекательность вашей компании для соискателей, условий труда, официального оформления и уровня зарплаты сотрудников, ваших требований к потенциальному работнику, уникальности специалиста и многих других.</p>
                 <table>
                     <tr>
                         <td>Специальность</td>
-                        <td>Ежемесячный оклад</td>
-                        <td>Стоимость подбора специалиста</td>
+                        <td>Оклад</td>
+                        <td style="max-width: 90px">Стоимость подбора</td>
                     </tr>
                     <tr>
                         <td>Фармацевт</td>
@@ -145,7 +213,7 @@
                         <td>100 000 ₽</td>
                     </tr>
                     <tr>
-                        <td>Генеральный директор</td>
+                        <td style="max-width: 90px">Генеральный директор</td>
                         <td>250 000 ₽</td>
                         <td>300 000 ₽</td>
                     </tr>
@@ -153,11 +221,12 @@
                 <p class="calculate-subtext">Рассчитайте стоимость услуг
                     сейчас и <span>получите скидку
                     до 50%!</span></p>
-                <div class="send-request">
-                    <a class="request-link" href="#">Подать заявку</a>
+                <div class="calculate-send-request">
+                    <a class="calculate-request-link" href="#">Подать заявку</a>
                 </div>
             </div>
             <div class="calculate-right">
+                <img src="/img/work.webp" alt="расчёт стоимости" class="calculate-right-img lazy-load-box"  data-delay="0" data-speed="400">
             </div>
         </div>
     </section>
@@ -361,7 +430,7 @@
                         </p>
                     </div>
                     <div class="calculate-form-block mt">
-                        <p class="calc-form-header"><label for="position">Профессиональные навыки</label></p>
+                        <p class="calc-form-header"><label for="position">Навыки</label></p>
                         <p class="calc-form-subheader"><select id="position">
                             <option value="1">Топ-менеджер
                             </option><option value="2">Линейный руководитель
@@ -370,15 +439,18 @@
                         </p>
                     </div>
                     <div class="calculate-form-block mt">
-                        <p class="calc-form-header"><label for="income">Среднемесячный доход</label></p>
+                        <p class="calc-form-header"><label for="income">Месячный доход</label></p>
                         <p class="calc-form-subheader"><input type="text" id="income" value="руб."></p>
                     </div>
-                    <input type="submit" class="calculate-btn mt" value="Рассчитать">
+                    <div class="calculate-form-block mt">
+                        <p class="calc-form-header bold"><label for="result">Стоимость услуги:</label></p>
+                        <p class="calc-form-subheader"><input type="text" id="result" value="100 000"></p>
+                    </div>
+                    <div class="calculate-form-block mt">
+                        <p class="calc-form-header"></p>
+                        <input type="submit" class="calculate-btn mt" value="Рассчитать">
+                    </div>
                 </form>
-                <div class="calculate-form-cost mt2">
-                    <p class="calc-form-cost">Стоимость услуги:</p>
-                    <p class="calculate-cost-worth">100 000 руб.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -389,15 +461,15 @@
             </h3>
             <div class="service-block-right">
                 <ul>
-                    <li>- Подбор руководителей высшего звена</li>
-                    <li>- Подбор руководителей среднего звена</li>
-                    <li>- Подбор специалистов и менеджеров</li>
-                    <li>- Подбор административного персонала</li>
-                    <li>- Подбор инженерно-технического персонала</li>
-                    <li>- Подбор линейного персонала (на производство, склад и т.п.)</li>
-                    <li>- Подбор временного персонала</li>
-                    <li>- Региональный подбор персонала</li>
-                    <li>- Массовый подбор персонала</li>
+                    <li>Подбор руководителей высшего звена</li>
+                    <li>Подбор руководителей среднего звена</li>
+                    <li>Подбор специалистов и менеджеров</li>
+                    <li>Подбор административного персонала</li>
+                    <li>Подбор инженерно-технического персонала</li>
+                    <li>Подбор линейного персонала</li>
+                    <li>Подбор временного персонала</li>
+                    <li>Региональный подбор персонала</li>
+                    <li>Массовый подбор персонала</li>
                 </ul>
             </div>
         </div>
@@ -406,6 +478,7 @@
         <div class="conditions-wrapper">
             <div class="conditions-left">
                 <h3 class="conditions-left-header">Условия сотрудничества</h3>
+                <img src="/img/super.webp" alt="conditions" class="conditions-left-img-hidden">
                 <ul>
                     <li>- Мы работаем без предоплаты: оплата производится по факту выхода специалиста на работу.</li>
                     <li>- Точная стоимость определяется индивидуально после переговоров и зависит от уровня сложности вакансии, срочности, продолжительности гарантийного срока, а также эксклюзивности сотрудничества.</li>
@@ -413,7 +486,8 @@
                     <li>- В случае прекращения сотрудничества компании с кандидатом в течение гарантийного срока, независимо от того, кто является его инициатором, предоставляется бесплатная замена.</li>
                 </ul>
             </div>
-            <div class="conditions-right">
+            <div class="conditions-right animate__animated animate__zoomInUp">
+                <img src="/img/super.webp" alt="conditions" class="conditions-right-img">
             </div>
         </div>
     </section>
@@ -425,24 +499,24 @@
             </div>
             <div class="step-right">
                 <div class="step-right-item">
-                    <div class="step-round">1</div>
+                    <div class="step-round animate__animated animate__zoomIn">1</div>
                     <div class="step-text">Оставьте заявку на сайте или по телефону</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round">2</div>
-                    <div class="step-text">Оставьте заявку на сайте или по телефону</div>
+                    <div class="step-round animate__animated animate__zoomIn">2</div>
+                    <div class="step-text">С вами свяжется наш менеджер</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round">3</div>
-                    <div class="step-text">Оставьте заявку на сайте или по телефону</div>
+                    <div class="step-round animate__animated animate__zoomIn">3</div>
+                    <div class="step-text">Обсуждение потребностей клиента<br> и условий сотрудничества</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round">4</div>
-                    <div class="step-text">Оставьте заявку на сайте или по телефону</div>
+                    <div class="step-round animate__animated animate__zoomIn">4</div>
+                    <div class="step-text">Поиск и оценка кандидатов</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round">5</div>
-                    <div class="step-text">Оставьте заявку на сайте или по телефону</div>
+                    <div class="step-round animate__animated animate__zoomIn">5</div>
+                    <div class="step-text">Представление кандидатов клиенту</div>
                 </div>
             </div>
         </div>
@@ -450,7 +524,7 @@
     <section class="contacts">
         <div class="contacts-wrapper">
             <h2 class="contacts-header">Давайте начнём<br> работать!</h2>
-            <div class="contacts-tel">+7 495 201-40-27</div>
+            <div class="contacts-tel"><a href="#">+7 495 201-40-27</a></div>
             <div class="contacts-email">info@inpersonnel.ru</div>
             <div class="conatacts-text">Оставьте контактные данные, мы позвоним <br>вам и ответим на все вопросы</div>
             <img src="/img/contacts.webp" alt="contacts" class="contacts-img">
@@ -462,5 +536,8 @@
             <div class="contacts-policy">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку<br> персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></div>
         </div>
     </section>
+    
+    <script src="/js/script.js"></script>
+    
 </body>
 </html>
