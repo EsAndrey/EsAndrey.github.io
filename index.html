@@ -93,6 +93,7 @@
                     <div class="calculate-cost-burger">
                         <a class="cost-link-burger" href="#">Расчитать стоимость</a>
                     </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -168,23 +169,23 @@
             <div class="employee-right">
                 <form>
                     <div class="employee-form-block">
-                        <input type="text" class="employee-name" value="ИМЯ" id="employee-name">
+                        <input type="text" class="employee-name" value="Имя" id="employee-name">
                     </div>
                     <div class="employee-form-block">
-                        <input type="tel" class="employee-tel" value="ТЕЛЕФОН">
+                        <input type="tel" class="employee-tel" value="Телефон">
                     </div>
                     <div class="employee-form-block">
-                        <input type="email" class="employee-email" value="EMAIL">
+                        <input type="email" class="employee-email" value="Email">
                     </div>
                     <div class="employee-form-block">
                         <input type="file" id="upload-file">
                         <label for="upload-file" class="upload-file-wrapper">
                             <span class="upload-file-img"><img src="/img/cloud-upload.svg" alt="upload"></span>
-                            <span class="upload-file-text">Выберите файл</span>
+                            <span class="upload-file-text">Выберите фаил</span>
                         </label>
                     </div>
                     <div class="employee-form-block">
-                        <input type="submit" class="employee-submit-btn" value="ОТПРАВИТЬ">
+                        <input type="submit" class="employee-submit-btn" value="Отправить">
                     </div>
                 </form>
             </div>
@@ -230,7 +231,7 @@
             </div>
         </div>
     </section>
-    <section class="calculate-down">
+    <section class="calculate-down" id="calculate-down">
         <div class="calculate-container-down">
             <div class="calculate-left-down">
                 <h3>Узнайте, сколько будет стоит подбора специалиста</h3>
@@ -536,8 +537,24 @@
             <div class="contacts-policy">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку<br> персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></div>
         </div>
     </section>
-    
+    <div class="modal_application_faded">
+        <div class="modal_application_close">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="modal_application">
+            <img src="/img/go.jpg" alt="подать заявку" class="modal_application_img">
+            <div class="modal_application_header">Подбор персонала от 3-х дней</div>
+            <div class="modal_application_subheader">Оставьте контактные данные, мы позвоним
+                вам и ответим на все вопросы</div>
+                <input type="text" value="Ваше имя" class="modal_application_name">
+                <input type="tel" value="+7" class="modal_application_tel">
+                <input type="submit" value="Отправить" class="modal_application_submit">
+                <div class="modal_application_policy">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку<br> персональных данных в соответствии с <a href="#">политикой конфиденциальности.</a></div>
+        </div>
+    </div>
+
+
     <script src="/js/script.js"></script>
-    
 </body>
 </html>
