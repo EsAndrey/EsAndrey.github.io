@@ -1,5 +1,80 @@
 'use strict';
 
+
+
+let lazyDiv = document.querySelectorAll('.step-round');
+const lazyImages = document.querySelectorAll('img[data-src]');
+const windowHeight = document.documentElement.clientHeight;
+
+
+let lazyImagesPositions = [];
+let lazyImagesPositionsDiv = [];
+
+if(lazyImages.length > 0) {
+  lazyImages.forEach(elem => {
+    if(elem.dataset.src || elem.dataset.srcset) {
+        lazyImagesPositions.push(elem.getBoundingClientRect().top + pageYOffset);
+        lazyScrollCheck();
+    }
+  });
+}
+
+function lazyScrollCheck() {
+  let imgIndex = lazyImagesPositions.findIndex(
+    item => pageYOffset > item - windowHeight
+  );
+  if(imgIndex >= 0 ) {
+    if(lazyImages[imgIndex].dataset.src) {
+      lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
+      lazyImages[imgIndex].classList.add('animate__animated', 'animate__zoomInUp', 'animate__slow');
+      lazyImages[imgIndex].removeAttribute('data-src');
+    }
+    delete lazyImagesPositions[imgIndex];
+  }
+}
+
+window.addEventListener('scroll', lazyScroll);
+
+function lazyScroll() {
+  if(document.querySelectorAll('img[data-src]').length > 0) {
+    lazyScrollCheck();
+  }
+}
+
+
+
+
+lazyDiv.forEach(elem => {
+  lazyImagesPositionsDiv.push(elem.getBoundingClientRect().top + pageYOffset);
+    lazyScrollCheckDiv();
+}
+)
+
+function lazyScrollCheckDiv() {
+  let imgIndex = lazyImagesPositionsDiv.findIndex(
+    item => pageYOffset > item - windowHeight
+  );
+  if(imgIndex >= 0 ) {
+    if(true) {
+      lazyDiv[imgIndex].classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
+    }
+    delete lazyImagesPositionsDiv[imgIndex];
+  }
+}
+
+window.addEventListener('scroll', lazyScrollDiv);
+
+function lazyScrollDiv() {
+  if(document.querySelectorAll('.step-right-item').length > 0) {
+    lazyScrollCheckDiv();
+  }
+}
+
+
+
+
+
+
 const burgerMenu = document.querySelector('.navbar-burger-menu');
 const burgerMenuHidden = document.querySelector('.navbar-burger-menu-block');
 const cross = document.querySelector('.burger-cross');
@@ -27,8 +102,14 @@ burgerMenu.addEventListener('click', () => {
 
 
 const modalApplication = document.querySelector('.modal_application_faded');
-const modalApplicationTrigger = document.querySelectorAll('.request-link-main, .request-link-header');
+const modalApplicationTrigger = document.querySelectorAll('.request-link-main, .request-link-header, .submit-link, .calculate-request-link, .request-link-burger');
 const modalApplicationClose = document.querySelector('.modal_application_close');
+const modalApplicationCloseMobile = document.querySelector('.modal_application_close_hiden');
+
+modalApplicationCloseMobile.addEventListener('click', () => {
+    modalApplication.style.display = "none";
+    document.body.style.overflow = "";
+})
 
 modalApplicationTrigger.forEach(trigger => {
   trigger.addEventListener('click', () => {
@@ -68,6 +149,13 @@ let employee = document.querySelector('.employee');
 let service = document.querySelector('.service');
 let contacts = document.querySelector('.contacts');
 let menuItemsSidebar = document.querySelectorAll('.navbar-item-burger');
+const calculateDownBtnSidebar = document.querySelector('.cost-link-burger');
+
+calculateDownBtnSidebar.addEventListener('click', () => {
+    calculateDown.scrollIntoView({behavior: "smooth"});
+    burgerMenuHidden.style.right = '-300px';
+    document.querySelector('body').style.overflow = '';
+})
 
 calculateDownBtn.addEventListener('click', () => {
   calculateDown.scrollIntoView({behavior: "smooth"});

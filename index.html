@@ -24,11 +24,12 @@
     <meta name="theme-color" content="#ffffff">
     <title>Intouch Personnel</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav-container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <div class="navbar-lebel">IN</div><span>персонал</span>
             </a>
             <div class="navbar-broad">
@@ -104,7 +105,7 @@
                     от 3-х дней
                 </h1>
                 <div class="main-right-hidden">
-                    <div class="main-right-text-hidden animate__animated animate__zoomInUp">3</div>
+                    <div class="main-right-text-hidden animate__animated animate__zoomInUp animate__slow">3</div>
                     <img class="main-right-img-hidden" src="/img/1.png" alt="money">
                     <img src="/img/2.png" alt="money-head" class="main-right-img-head-hidden">
                 </div>
@@ -133,7 +134,7 @@
                 </div>
             </div>
             <div class="main-right">  
-                <div class="main-right-text animate__animated animate__zoomInUp">3</div>
+                <div class="main-right-text animate__animated animate__zoomInUp animate__slow">3</div>
                 <img class="main-right-img" src="/img/1.png" alt="money">
                 <img src="/img/2.png" alt="money-head" class="main-right-img-head">
             </div>
@@ -143,7 +144,7 @@
         <div class="company-container">
             <div class="company-left">
                 <h3>О компании</h3>
-                <img src="/img/about.webp" alt="about company" class="company-left-img-hidden">
+                <img data-src="/img/about.webp" src="/img/1x1.png"  alt="about company" class="company-left-img-hidden">
                 <p class="company-left-text">Мы специализирующаяся на решениях в области управления персоналом компания. Наши консультанты обладают отраслевой и функциональной экспертизой в подборе высококвалифицированных профессионалов и руководителей среднего и высшего звена, а также специалистов на стартовые позиции, как на постоянные, так и на временные проекты.
                 <p class="company-left-subtext"><span>Intouch personnel</span> предоставляет решения для бизнеса, которые позволяют комплексно подойти к анализу рынка, оценке и развитию персонала, управлению HR функциями, формировать проектные команды под потребности наших клиентов, а также выстраивать системы управления поставщиками и услугами.</p>
                 <p class="company-left-text-call">Вы всё ещё не начали сотрудничать с нами?</p>
@@ -151,8 +152,8 @@
                     <a class="submit-link" href="#">Сотрудничество</a>
                 </div>
             </div>
-            <div class="company-right animate__animated animate__zoomInUp">
-                <img src="/img/about.webp" alt="about company" class="company-right-img">
+            <div class="company-right">
+                <img data-src="/img/about.webp" src="/img/1x1.png"   alt="about company" class="company-right-img">
             </div>
         </div>
     </section>
@@ -195,7 +196,7 @@
         <div class="calculate-container">
             <div class="calculate-left">
                 <h3>Пример расчета стоимости<br> подбора персонала</h3>
-                <img src="/img/work.webp" alt="расчёт стоимости" class="calculate-right-img-hidden">
+                <img data-src="/img/work.webp" src="/img/1x1.png"   alt="расчёт стоимости" class="calculate-right-img-hidden" >
                 <p>Цена зависит от многих факторов, таких как привлекательность вашей компании для соискателей, условий труда, официального оформления и уровня зарплаты сотрудников, ваших требований к потенциальному работнику, уникальности специалиста и многих других.</p>
                 <table>
                     <tr>
@@ -227,7 +228,7 @@
                 </div>
             </div>
             <div class="calculate-right">
-                <img src="/img/work.webp" alt="расчёт стоимости" class="calculate-right-img lazy-load-box"  data-delay="0" data-speed="400">
+                <img data-src="/img/work.webp" src="/img/1x1.png"  alt="расчёт стоимости" class="calculate-right-img">
             </div>
         </div>
     </section>
@@ -479,7 +480,7 @@
         <div class="conditions-wrapper">
             <div class="conditions-left">
                 <h3 class="conditions-left-header">Условия сотрудничества</h3>
-                <img src="/img/super.webp" alt="conditions" class="conditions-left-img-hidden">
+                <img data-src="/img/super.webp" src="/img/1x1.png" alt="conditions" class="conditions-left-img-hidden">
                 <ul>
                     <li>- Мы работаем без предоплаты: оплата производится по факту выхода специалиста на работу.</li>
                     <li>- Точная стоимость определяется индивидуально после переговоров и зависит от уровня сложности вакансии, срочности, продолжительности гарантийного срока, а также эксклюзивности сотрудничества.</li>
@@ -487,8 +488,8 @@
                     <li>- В случае прекращения сотрудничества компании с кандидатом в течение гарантийного срока, независимо от того, кто является его инициатором, предоставляется бесплатная замена.</li>
                 </ul>
             </div>
-            <div class="conditions-right animate__animated animate__zoomInUp">
-                <img src="/img/super.webp" alt="conditions" class="conditions-right-img">
+            <div class="conditions-right">
+                <img data-src="/img/super.webp" src="/img/1x1.png" alt="conditions"  class="conditions-right-img">
             </div>
         </div>
     </section>
@@ -500,23 +501,23 @@
             </div>
             <div class="step-right">
                 <div class="step-right-item">
-                    <div class="step-round animate__animated animate__zoomIn">1</div>
+                    <div class="step-round">1</div>
                     <div class="step-text">Оставьте заявку на сайте или по телефону</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round animate__animated animate__zoomIn">2</div>
+                    <div class="step-round">2</div>
                     <div class="step-text">С вами свяжется наш менеджер</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round animate__animated animate__zoomIn">3</div>
+                    <div class="step-round">3</div>
                     <div class="step-text">Обсуждение потребностей клиента<br> и условий сотрудничества</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round animate__animated animate__zoomIn">4</div>
+                    <div class="step-round">4</div>
                     <div class="step-text">Поиск и оценка кандидатов</div>
                 </div>
                 <div class="step-right-item">
-                    <div class="step-round animate__animated animate__zoomIn">5</div>
+                    <div class="step-round">5</div>
                     <div class="step-text">Представление кандидатов клиенту</div>
                 </div>
             </div>
@@ -528,7 +529,7 @@
             <div class="contacts-tel"><a href="#">+7 495 201-40-27</a></div>
             <div class="contacts-email">info@inpersonnel.ru</div>
             <div class="conatacts-text">Оставьте контактные данные, мы позвоним <br>вам и ответим на все вопросы</div>
-            <img src="/img/contacts.webp" alt="contacts" class="contacts-img">
+            <img data-src="/img/contacts.webp" src="/img/1x1.png" alt="contacts" class="contacts-img">
             <div class="contacts-data">
                 <input type="text" id="contacts-data-name" value="Ваше имя">
                 <input type="tel" id="contacts-data-tel" value="8 926 168 35 35">
@@ -542,7 +543,11 @@
             <span></span>
             <span></span>
         </div>
-        <div class="modal_application">
+        <div class="modal_application animate__animated animate__zoomInUp animate__faster">
+            <div class="modal_application_close_hiden">
+                <span></span>
+                <span></span>
+            </div>
             <img src="/img/go.jpg" alt="подать заявку" class="modal_application_img">
             <div class="modal_application_header">Подбор персонала от 3-х дней</div>
             <div class="modal_application_subheader">Оставьте контактные данные, мы позвоним
